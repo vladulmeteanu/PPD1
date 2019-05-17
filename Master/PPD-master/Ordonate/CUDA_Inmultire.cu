@@ -35,7 +35,6 @@ __global__ void vec_mul(float *a, float *b, float *c, int N)
 __global__ void mat_vec(float *a, float *b, float *c, int N)
 {
 	int idx = blockIdx.x*blockDim.x + threadIdx.x;
-    int col = blockIdx.y*blockDim.y + threadIdx.y;
 	
 	if (idx) 
 	{
